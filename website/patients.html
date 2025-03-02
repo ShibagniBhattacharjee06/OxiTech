@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OxiTech - Patients</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="topbar">
+            <div class="logo">
+                <div class="logo-icon">O<sub>2</sub></div>
+                <div class="logo-text">OxiTech</div>
+            </div>
+            <div class="user-profile">
+                <div class="profile-img">D</div>
+                <span>Dr. Sarah Johnson</span>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="sidebar">
+                <ul class="sidebar-menu">
+                    <li onclick="window.location.href='dashboard.html'"><i>📊</i><span>Dashboard</span></li>
+                    <li class="active"><i>🫁</i><span>Patients</span></li>
+                    <li onclick="window.location.href='analytics.html'"><i>📈</i><span>Analytics</span></li>
+                    <li onclick="window.location.href='reports.html'"><i>📝</i><span>Reports</span></li>
+                    <li style="margin-top: auto;" onclick="window.location.href='index.html'"><i>📤</i><span>Logout</span></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <h1 class="page-title">Patient Details</h1>
+                <div class="stat-card" style="margin-bottom: 30px;">
+                    <h2>Patient Information</h2>
+                    <p><strong>Name:</strong> Shibagni Bhattacharjee</p>
+                    <p><strong>Age:</strong> 19+</p>
+                    <p><strong>Condition:</strong> Under Ventilator Monitoring</p>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-card">
+                        <h3>Medical Reports</h3>
+                        <embed src="prescription.pdf" width="100%" height="400px" type="application/pdf">
+                    </div>
+                    <div class="chart-card">
+                        <h3>Prescriptions</h3>
+                        <embed src="sample-prescription.pdf" width="100%" height="400px" type="application/pdf">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

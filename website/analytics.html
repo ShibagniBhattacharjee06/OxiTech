@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OxiTech - Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="topbar">
+            <div class="logo">
+                <div class="logo-icon">O<sub>2</sub></div>
+                <div class="logo-text">OxiTech</div>
+            </div>
+            <div class="user-profile">
+                <div class="profile-img">D</div>
+                <span>Dr. Sarah Johnson</span>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="sidebar">
+                <ul class="sidebar-menu">
+                    <li onclick="window.location.href='dashboard.html'"><i>📊</i><span>Dashboard</span></li>
+                    <li onclick="window.location.href='patients.html'"><i>🫁</i><span>Patients</span></li>
+                    <li class="active"><i>📈</i><span>Analytics</span></li>
+                    <li onclick="window.location.href='reports.html'"><i>📝</i><span>Reports</span></li>
+                    <li style="margin-top: auto;" onclick="window.location.href='index.html'"><i>📤</i><span>Logout</span></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <h1 class="page-title">Analytics - Oxygen Levels</h1>
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <div class="chart-title">Oxygen Level History (Shibagni Bhattacharjee)</div>
+                        <div class="time-selector">
+                            <div class="time-option">1H</div>
+                            <div class="time-option active">6H</div>
+                            <div class="time-option">24H</div>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <div class="chart-bar" style="height: 88%" data-value="80" data-label="09:00"></div>
+                        <div class="chart-bar" style="height: 92%" data-value="60" data-label="10:00"></div>
+                        <div class="chart-bar" style="height: 95%" data-value="85" data-label="11:00"></div>
+                        <div class="chart-bar" style="height: 93%" data-value="93" data-label="12:00"></div>
+                        <div class="chart-bar" style="height: 90%" data-value="90" data-label="13:00"></div>
+                        <div class="chart-bar" id="currentBar" style="height: 94%" data-value="94" data-label="14:00"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OxiTech - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container" id="loginPage">
+        <div class="login-image">
+            <h1>Welcome to OxiTech</h1>
+            <p>Advanced Emergency Ventilator Monitoring System</p>
+        </div>
+        <div class="login-form-container">
+            <div class="login-form">
+                <div class="logo">
+                    <div class="logo-icon">O<sub>2</sub></div>
+                    <div class="logo-text">OxiTech</div>
+                </div>
+                <h2>Login to your account</h2>
+                <p style="margin-bottom: 20px; color: var(--gray-dark);">Enter credentials to access the system</p>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <button id="loginBtn" class="btn btn-block">Log In</button>
+                <div class="login-footer">
+                    <p>© 2025 OxiTech</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginBtn').addEventListener('click', () => {
+            window.location.href = 'dashboard.html';
+        });
+    </script>
+</body>
+</html>

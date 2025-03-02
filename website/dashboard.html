@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OxiTech - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard" id="dashboard">
+        <div class="topbar">
+            <div class="logo">
+                <div class="logo-icon">O<sub>2</sub></div>
+                <div class="logo-text">OxiTech</div>
+            </div>
+            <div class="user-profile">
+                <div class="profile-img">D</div>
+                <span>Dr. Sarah Johnson</span>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="sidebar">
+                <ul class="sidebar-menu">
+                    <li class="active"><i>📊</i><span>Dashboard</span></li>
+                    <li onclick="window.location.href='patients.html'"><i>🫁</i><span>Patients</span></li>
+                    <li onclick="window.location.href='analytics.html'"><i>📈</i><span>Analytics</span></li>
+                    <li onclick="window.location.href='reports.html'"><i>📝</i><span>Reports</span></li>
+                    <li style="margin-top: auto;" onclick="window.location.href='index.html'"><i>📤</i><span>Logout</span></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <h1 class="page-title">Patient Monitoring Dashboard</h1>
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div>
+                                <div class="stat-value" id="oxygenLevel">Loading...</div>
+                                <div class="stat-label">Oxygen Level (%)</div>
+                            </div>
+                            <div class="stat-icon primary">O<sub>2</sub></div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div>
+                                <div class="stat-value">loading...</div>
+                                <div class="stat-label">Resp. Rate (bpm)</div>
+                            </div>
+                            <div class="stat-icon success">🫁</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div>
+                                <div class="stat-value">loading...</div>
+                                <div class="stat-label">Temperature (°C)</div>
+                            </div>
+                            <div class="stat-icon warning">🌡️</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div>
+                                <div class="stat-value">loading...</div>
+                                <div class="stat-label">Heart Rate (bpm)</div>
+                            </div>
+                            <div class="stat-icon danger">❤️</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
